@@ -12,7 +12,9 @@ int main(){
 	int option;
 	LinkedList list;
 	while(1){
-		cout<<"0.to exit\n1.insert a node in linkedlist at last \n2.delete last node\n3.delete a element at specified index\n4.create a list from array\n5.add a complex integer to list\n6.add a list to list\n7.search in linked list\n";
+		cout<<"0.to exit\n1.insert a node in linkedlist at last \n2.delete last node\n
+			3.delete a element at specified index\n4.create a list from array\n
+			5.add a complex integer to list\n6.add a list to list\n7.search in linked list\n";
 		cout<<"enter your option";
 		cin>>option;
 		switch(option){
@@ -129,19 +131,19 @@ int main(){
 			}
 			case 7:
 			{
-			 cout<<"\n Enter the real and imaginary number of a new complexInteger object. To check its presence in Linked List 3"<<endl;
-    int rvalue2,ivalue2;
-    cin>>rvalue2>>ivalue2;
-    Complex newobj(rvalue2,ivalue2);
-	if(search(newobj,list))
-	{
-		cout<<"present"<<endl;
-	}
-	else
-	{
-		cout<<"not present"<<endl;
-	}
-		}
+			 	cout<<"\n Enter the real and imaginary number of a new complexInteger object. To check its presence in Linked List 3"<<endl;
+				int rvalue2,ivalue2;
+				cin>>rvalue2>>ivalue2;
+				Complex newobj(rvalue2,ivalue2);
+				if(search(newobj,list))
+				{
+					cout<<"present"<<endl;
+				}
+				else
+				{
+					cout<<"not present"<<endl;
+				}
+			}
 		}
 	}
 	
